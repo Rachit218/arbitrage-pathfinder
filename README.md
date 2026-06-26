@@ -50,9 +50,13 @@ To bridge the gap between textbook computer science and live-market realities, t
 `cd arbitrage-pathfinder`
 `pip install streamlit pandas`
 
-**2. Compile the C++ Backend Engine:**
-Compile the source code using standard GCC with optimization flags to generate the executable that the Streamlit app will call.
-`g++ -O3 bellman_ford.cpp -o arbitrage_finder`
+**2. Fetch the Data using Python:**
+Execute the data ingestion layer to fetch historical price series:
+`python fetch_rates.py`
 
-**3. Launch the Streamlit Dashboard:**
+**3. Compile the C++ Backend Engine:**
+Compile the source code using standard GCC with optimization flags to generate the executable that the Streamlit app will call.
+`g++ -O3 engine.cpp -o arbitrage_finder`
+
+**4. Launch the Streamlit Dashboard:**
 `streamlit run app.py`
