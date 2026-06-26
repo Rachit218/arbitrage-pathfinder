@@ -46,7 +46,7 @@ To bridge the gap between textbook computer science and live-market realities, t
 ## Quick Start & Usage
 
 **1. Clone the repository and install UI dependencies:**
-`git clone https://github.com/YourUsername/arbitrage-pathfinder.git`
+`git clone https://github.com/Rachit218/arbitrage-pathfinder.git`
 `cd arbitrage-pathfinder`
 `pip install streamlit pandas`
 
